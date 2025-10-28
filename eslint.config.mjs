@@ -8,13 +8,29 @@ const eslintConfig = defineConfig([
   ...nextTs,
   // Override default ignores of eslint-config-next.
   globalIgnores([
-    // Default ignores of eslint-config-next:
+    // Build outputs
     ".next/**",
     "out/**",
     "build/**",
-    "next-env.d.ts",
-    "node_modules/**",
+    "dist/**",
+    "storybook-static/**",
     ".storybook-static/**",
+    // Dependencies
+    "node_modules/**",
+    // Config files
+    "*.config.js",
+    "*.config.ts",
+    "*.config.mjs",
+    // TypeScript
+    "next-env.d.ts",
+    "*.tsbuildinfo",
+    // Git hooks
+    ".husky/**",
+    // Public assets
+    "public/**",
+    // Other
+    "coverage/**",
+    ".turbo/**",
   ]),
   {
     rules: {
