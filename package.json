@@ -32,22 +32,18 @@
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
-    "@chromatic-com/storybook": "^4.1.1",
-    "@storybook/addon-a11y": "^10.0.0",
-    "@storybook/addon-docs": "^10.0.0",
-    "@storybook/addon-onboarding": "^10.0.0",
-    "@storybook/addon-vitest": "^10.0.0",
-    "@storybook/nextjs": "^10.0.0",
+    "@storybook/addon-a11y": "^10.0.2",
+    "@storybook/nextjs": "^10.0.2",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.0.1",
-    "eslint-plugin-storybook": "^10.0.0",
+    "eslint-plugin-storybook": "^10.0.2",
     "husky": "^9.1.7",
     "prettier": "^3.6.2",
-    "storybook": "^10.0.0",
+    "storybook": "^10.0.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
