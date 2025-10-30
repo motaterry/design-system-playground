@@ -95,47 +95,40 @@
   --color-background: oklch(var(--background));
   --color-foreground: oklch(var(--foreground));
   
-  /* Custom design tokens as Tailwind colors */
-  --color-bg: rgb(var(--color-bg));
+  /* shadcn/ui theme tokens - these map to bg-card, text-card-foreground etc */
+  --color-card: oklch(var(--card-bg));
+  --color-card-foreground: oklch(var(--card-foreground));
+  --color-popover: oklch(var(--popover));
+  --color-popover-foreground: oklch(var(--popover-foreground));
+  --color-primary: oklch(var(--primary-base));
+  --color-primary-foreground: oklch(var(--primary-fg));
+  --color-secondary: oklch(var(--secondary));
+  --color-secondary-foreground: oklch(var(--secondary-foreground));
+  --color-muted: oklch(var(--muted));
+  --color-muted-foreground: oklch(var(--muted-foreground));
+  --color-accent: oklch(var(--accent-base));
+  --color-accent-foreground: oklch(var(--accent-fg));
+  --color-destructive: oklch(var(--destructive));
+  --color-destructive-foreground: oklch(var(--destructive-foreground));
+  --color-border: oklch(var(--border-base));
+  --color-input: oklch(var(--input));
+  --color-ring: oklch(var(--ring-base));
+  
+  /* Custom design tokens with unique names to avoid conflicts */
+  --color-bg-custom: rgb(var(--color-bg));
   --color-bg-subtle: rgb(var(--color-bg-subtle));
-  --color-card: rgb(var(--color-card));
-  --color-border: rgb(var(--color-border));
-  --color-ring: rgb(var(--color-ring));
-  --color-text: rgb(var(--color-text));
-  --color-text-muted: rgb(var(--color-text-muted));
-  --color-primary: rgb(var(--color-primary));
-  --color-primary-foreground: rgb(var(--color-primary-foreground));
-  --color-accent: rgb(var(--color-accent));
-  --color-accent-foreground: rgb(var(--color-accent-foreground));
+  --color-text-custom: rgb(var(--color-text));
+  --color-text-muted-custom: rgb(var(--color-text-muted));
   --color-success: rgb(var(--color-success));
   --color-warning: rgb(var(--color-warning));
   --color-danger: rgb(var(--color-danger));
-  --color-info: rgb(var(--color-info));
+  --color-info-custom: rgb(var(--color-info));
   
   /* Border radius tokens */
   --radius-sm: var(--radius-sm);
   --radius-md: var(--radius-md);
   --radius-lg: var(--radius-lg);
   --radius-default: var(--radius);
-  
-  /* shadcn/ui theme tokens */
-  --color-card-bg: oklch(var(--card-bg));
-  --color-card-foreground: oklch(var(--card-foreground));
-  --color-popover: oklch(var(--popover));
-  --color-popover-foreground: oklch(var(--popover-foreground));
-  --color-primary-base: oklch(var(--primary-base));
-  --color-primary-fg: oklch(var(--primary-fg));
-  --color-secondary: oklch(var(--secondary));
-  --color-secondary-foreground: oklch(var(--secondary-foreground));
-  --color-muted: oklch(var(--muted));
-  --color-muted-foreground: oklch(var(--muted-foreground));
-  --color-accent-base: oklch(var(--accent-base));
-  --color-accent-fg: oklch(var(--accent-fg));
-  --color-destructive: oklch(var(--destructive));
-  --color-destructive-foreground: oklch(var(--destructive-foreground));
-  --color-border-base: oklch(var(--border-base));
-  --color-input: oklch(var(--input));
-  --color-ring-base: oklch(var(--ring-base));
 }
 
 body {
