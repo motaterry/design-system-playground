@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useTheme } from 'next-themes'
 import { Button } from '@/components/ui/button'
 import {
   Card,
@@ -54,10 +55,17 @@ import {
 import { toast } from 'sonner'
 
 export default function SettingsPage() {
-  const [theme, setTheme] = useState('light')
+  const { theme, setTheme } = useTheme()
   const [emailNotifications, setEmailNotifications] = useState(true)
   const [pushNotifications, setPushNotifications] = useState(false)
   const [twoFactorAuth, setTwoFactorAuth] = useState(false)
+  const [mounted, setMounted] = useState(false)
+
+  // useEffect only runs on the client, so now we can safely show the UI
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setMounted(true)
+  }, [])
 
   const apiKeys = [
     { id: 1, name: 'Production API Key', key: 'sk_live_***************', created: '2024-01-15' },
@@ -133,7 +141,7 @@ export default function SettingsPage() {
             <CardContent className="space-y-4">
               <div className="grid gap-2">
                 <Label htmlFor="theme">Theme</Label>
-                <Select value={theme} onValueChange={setTheme}>
+                <Select value={mounted ? theme : 'light'} onValueChange={setTheme}>
                   <SelectTrigger id="theme">
                     <SelectValue placeholder="Select theme" />
                   </SelectTrigger>

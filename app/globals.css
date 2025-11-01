@@ -7,7 +7,7 @@
   --color-card: 0 0% 100%;
   --color-border: 0 0% 90%;
   --color-ring: 217 91% 60%;
-  --color-text: 240 6% 4%;
+  --color-text: 0 0% 0%;
   --color-text-muted: 240 4% 46%;
   --color-primary: 240 6% 10%;
   --color-primary-foreground: 0 0% 98%;
@@ -29,11 +29,11 @@
 
   /* shadcn/ui compatibility */
   --background: 0 0% 100%;
-  --foreground: 240 10% 3.9%;
+  --foreground: 0 0% 0%;
   --card-bg: 0 0% 100%;
-  --card-foreground: 240 10% 3.9%;
+  --card-foreground: 0 0% 0%;
   --popover: 0 0% 100%;
-  --popover-foreground: 240 10% 3.9%;
+  --popover-foreground: 0 0% 0%;
   --primary-base: 240 5.9% 10%;
   --primary-fg: 0 0% 98%;
   --secondary: 240 4.8% 95.9%;
@@ -55,9 +55,9 @@
   --color-bg: 240 6% 4%;
   --color-bg-subtle: 240 6% 10%;
   --color-card: 240 6% 10%;
-  --color-border: 240 4% 16%;
+  --color-border: 0 0% 33%;
   --color-ring: 217 91% 68%;
-  --color-text: 0 0% 98%;
+  --color-text: 0 0% 100%;
   --color-text-muted: 240 5% 65%;
   --color-primary: 0 0% 98%;
   --color-primary-foreground: 240 6% 10%;
@@ -70,11 +70,11 @@
 
   /* shadcn/ui compatibility */
   --background: 240 10% 3.9%;
-  --foreground: 0 0% 98%;
+  --foreground: 0 0% 100%;
   --card-bg: 240 10% 3.9%;
-  --card-foreground: 0 0% 98%;
+  --card-foreground: 0 0% 100%;
   --popover: 240 10% 3.9%;
-  --popover-foreground: 0 0% 98%;
+  --popover-foreground: 0 0% 100%;
   --primary-base: 0 0% 98%;
   --primary-fg: 240 5.9% 10%;
   --secondary: 240 3.7% 15.9%;
@@ -85,7 +85,7 @@
   --accent-fg: 0 0% 98%;
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
-  --border-base: 240 3.7% 15.9%;
+  --border-base: 0 0% 33%;
   --input: 240 3.7% 15.9%;
   --ring-base: 217 91% 68%;
 }
