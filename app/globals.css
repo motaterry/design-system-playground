@@ -55,7 +55,7 @@
   --color-bg: 240 6% 4%;
   --color-bg-subtle: 240 6% 10%;
   --color-card: 240 6% 10%;
-  --color-border: 0 0% 33%;
+  --color-border: 0 0% 40%;
   --color-ring: 217 91% 68%;
   --color-text: 0 0% 100%;
   --color-text-muted: 240 5% 65%;
@@ -85,7 +85,7 @@
   --accent-fg: 0 0% 98%;
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
-  --border-base: 0 0% 33%;
+  --border-base: 0 0% 40%;
   --input: 240 3.7% 15.9%;
   --ring-base: 217 91% 68%;
 }
