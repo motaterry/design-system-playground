@@ -22,6 +22,9 @@ export default function Home() {
               <Link href="/preview">View Settings Demo</Link>
             </Button>
             <Button asChild variant="outline" size="lg">
+              <Link href="/token-generator">Generate Design Tokens</Link>
+            </Button>
+            <Button asChild variant="outline" size="lg">
               <a
                 href="http://localhost:6006"
                 target="_blank"
